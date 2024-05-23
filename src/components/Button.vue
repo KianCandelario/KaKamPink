@@ -3,9 +3,7 @@ import {computed} from "vue";
 
     const props = defineProps({
         // Content
-        value: String,
-        // Enable/disable loading state 
-        loading: Boolean,
+        // value: String,
         // Enable/disable the button
         disabled: Boolean,
         // Enable outline only
@@ -22,15 +20,21 @@ import {computed} from "vue";
         intent: {
             type: String,
             default: "primary",
-            validator: val => ["primary", "secondary", "danger", "text"].includes(val),
+            validator: val => ["primary", "secondary", "danger", "text", "link"].includes(val),
         },
+        // Button shape
+        shape: {
+            type: String,
+            default: "rounded",
+            validator: val => ["rounded", "pill", "squared", "block"].includes(val),
+        }
     });
-
+    // Button Class declaration
     const buttonClass = computed(()=> {
         const sizeClasses ={
-            sm: "text-sm px-2.5 py-1 rounded ",
-            md: "text-base px-4 py-2 rounded ",
-            lg: "text-lg px-5 py-2.5 rounded ",
+            sm: "text-sm px-2.5 py-1",
+            md: "text-base px-4 py-2",
+            lg: "text-lg px-5 py-2.5",
         };
         const variantClasses = {
             primary: {
@@ -47,10 +51,32 @@ import {computed} from "vue";
             },
             text: {
             default: "text-[#F06292] hover:text-[#E04D78]",
-            outline: "not-applicable", // Text buttons don't use outline styles
+            outline: "not-applicable",
+            },
+            link: {
+            default: "text-[#F06292] underline hover:text-[#E04D78]",
+            outline: "not-applicable",
             },
         };
-    return `${sizeClasses[props.size]}  ${props.outline ? variantClasses[props.intent].outline : variantClasses[props.intent].default}`;
+        let shapeClasses;
+        switch (props.shape){
+            case "rounded":
+                shapeClasses = "";
+                break;
+            case "pill":
+                shapeClasses = "rounded-full";
+                break;
+            case "squared":
+                shapeClasses = "rounded-none";
+                break;
+            case "block":
+                shapeClasses = "w-full";
+                break;
+        };
+        const disabledState={
+            true: " bg-gray-100 text-black pointer-events-none"
+        };
+    return `${sizeClasses[props.size]} ${disabledState[props.disabled]} ${props.outline ? variantClasses[props.intent].outline : variantClasses[props.intent].default} ${shapeClasses}`;
     });
 </script>
 
@@ -60,6 +86,6 @@ import {computed} from "vue";
     :disabled="props.disabled"
     :class = "buttonClass"
     >
-    {{ props.value }}
+    <slot/>
     </button>
 </template>
