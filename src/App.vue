@@ -1,15 +1,21 @@
 <template>
-  <div class="p-4">
-    <KaKamPinkAvatar />
+   <div class="p-4">
+    <KaKamPinkCheckbox v-model="checkboxValue" label="Label for checkbox" />
   </div>
 </template>
 
 <script>
-import KaKamPinkAvatar from './components/KaKamPinkAvatar.vue';
+import KaKamPinkCheckbox from './components/KaKamPinkCheckbox.vue';
 
 export default {
+  name: 'App',
   components: {
-    KaKamPinkAvatar,
+    KaKamPinkCheckbox,
+  },
+  data() {
+    return {
+      checkboxValue: false,
+    };
   },
 };
 </script>
