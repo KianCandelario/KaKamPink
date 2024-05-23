@@ -1,7 +1,15 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <HelloWorld />
+  <div class="p-4">
+    <KaKamPinkAvatar />
+  </div>
 </template>
+
+<script>
+import KaKamPinkAvatar from './components/KaKamPinkAvatar.vue';
+
+export default {
+  components: {
+    KaKamPinkAvatar,
+  },
+};
+</script>
