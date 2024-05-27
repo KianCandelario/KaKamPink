@@ -1,7 +1,8 @@
 <template>
   <div class="flex justify-center items-center h-screen">
     <div class="relative h-fit w-fit">
-      <button type="button" class="inline-flex justify-center w-full rounded-md px-14 py-2 bg-pink-500 text-white font-bold text-md hover:bg-pink-800 font-serif" @mouseover="showPopup = true" @mouseleave="showPopup = false">
+      <button type="button" class="inline-flex justify-center w-full rounded-md px-14 py-2 bg-pink-500 text-white text-md text-md hover:bg-pink-800 font-serif" 
+      @mouseover="showPopup = true" @mouseleave="showPopup = false">
         POPUP
       </button>
 
@@ -15,7 +16,7 @@
 
 <script>
 export default {
-  props:['content']
+  props:['content'] 
   ,
   data() {
     return {
