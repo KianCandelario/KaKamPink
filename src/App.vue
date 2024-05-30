@@ -12,5 +12,5 @@ import BottomSheetContainer from './components/BottomSheetContainer.vue'
 </script>
 
 <template>
-  <SheetContainer/>
+  <Sheet_One/>
 </template>
