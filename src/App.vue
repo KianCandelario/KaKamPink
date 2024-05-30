@@ -7,8 +7,10 @@ import Sheet_Three from './components/Sheet_Three.vue'
 import BottomSheets_One from './components/BottomSheets_One.vue'
 import BottomSheet_Two from './components/BottomSheet_Two.vue'
 import BottomSheet_Three from './components/BottomSheet_Three.vue'
+import SheetContainer from './components/SheetContainer.vue'
+import BottomSheetContainer from './components/BottomSheetContainer.vue'
 </script>
 
 <template>
-  <BottomSheet_Three/>
+  <SheetContainer/>
 </template>
