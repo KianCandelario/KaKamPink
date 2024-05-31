@@ -1,4 +1,3 @@
-
 <template>
     <div class=" bg-gray-400 space-y-2 p-4 rounded-lg w-80">
         <div class=" flex-col space-x-2">
@@ -17,9 +16,3 @@
         </div>
     </div>
 </template>
-
-<script>
-
-
-
-</script>
