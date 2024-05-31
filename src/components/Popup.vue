@@ -1,13 +1,13 @@
 <template>
   <div class="flex justify-center items-center h-screen">
     <div class="relative h-fit w-fit">
-      <button type="button" class="inline-flex justify-center w-full rounded-md px-14 py-2 bg-pink-500 text-white text-md text-md hover:bg-pink-800 font-serif" 
+      <button type="button" class="inline-flex justify-center w-full rounded-md px-14 py-2 bg-[#f1799f] text-white text-md text-md font-serif" 
       @mouseover="showPopup = true" @mouseleave="showPopup = false">
         POPUP
       </button>
 
       <div v-if="showPopup" class="absolute left-1/2 transform -translate-x-1/2 rounded-md bg-gray-300 mt-2">
-        <p class="text-sl text-black py-2 px-4">{{ content }}</p>
+        <p class="text-sl text-black py-2 px-4 bg-transparent">{{ content }}</p>
       </div>
     </div>
   </div>
@@ -16,8 +16,7 @@
 
 <script>
 export default {
-  props:['content'] 
-  ,
+  props:['content'],
   data() {
     return {
       showPopup: false,
