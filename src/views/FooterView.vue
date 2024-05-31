@@ -74,12 +74,10 @@
 
 <script>
 import kkp_footer from '../components/kkp-footer.vue'
-import kkp_container from '../components/Container.vue'
 
 export default {
     components:{
-        kkp_footer,
-        kkp_container
+        kkp_footer
     }
 }
 </script>
