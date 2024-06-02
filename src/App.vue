@@ -1,16 +1,19 @@
 <template>
-   <div class="p-4">
-    <KaKamPinkCheckbox v-model="checkboxValue" label="Label for checkbox" />
+  <div class="p-4">
+    <KKPCheckbox v-model="checkboxValue" label="Label for checkbox" />
+    <KKPAvatar src="your-image-url.jpg" alt="Avatar" size="10" />
   </div>
 </template>
 
 <script>
-import KaKamPinkCheckbox from './components/KaKamPinkCheckbox.vue';
+/*import KKPCheckbox from './components/kkp_Checkbox.vue';*/
+import KKPAvatar from './components/kkp_Avatar.vue';
 
 export default {
   name: 'App',
   components: {
-    KaKamPinkCheckbox,
+    /*KKPCheckbox,*/
+    KKPAvatar,
   },
   data() {
     return {

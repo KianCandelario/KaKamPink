@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'KaKamPinkAvatar',
+  name: 'kkp_Avatar',
   props: {
     src: {
       type: String,
@@ -28,7 +28,7 @@ export default {
     },
     alt: {
       type: String,
-      default: 'kakampink-avatar',
+      default: 'kkp_Avatar',
     },
     size: {
       type: String,

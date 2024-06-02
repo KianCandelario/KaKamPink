@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'KakampinkCheckbox',
+  name: 'kkp_Checkbox',
   props: {
     modelValue: {
       type: Boolean,
