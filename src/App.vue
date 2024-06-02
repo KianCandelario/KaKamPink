@@ -7,10 +7,10 @@ import Sheet_Three from './components/Sheet_Three.vue'
 import BottomSheets_One from './components/BottomSheets_One.vue'
 import BottomSheet_Two from './components/BottomSheet_Two.vue'
 import BottomSheet_Three from './components/BottomSheet_Three.vue'
-import SheetContainer from './components/SheetContainer.vue'
-import BottomSheetContainer from './components/BottomSheetContainer.vue'
+import kkp_sheet from './components/kkp-sheet.vue'
+  import kkp_bottomsheet from './components/kkp-bottomsheet.vue'
 </script>
 
 <template>
-  <Sheet_One/>
+  <kkp_sheet/>
 </template>
