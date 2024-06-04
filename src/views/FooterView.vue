@@ -8,7 +8,7 @@
 
         <div class="w-[80%]">
             <h1 class="bg-transparent text-start text-[30px] font-poppins mt-3">Default </h1>
-            <p class="font-poppins mt-2 text-[15px]">Add an element input facilitated with the component <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">kkp_footer</span> </p>
+            <p class="font-poppins mt-2 text-[15px]">The <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">kkp_footer</span>   component in its simplest form is a container. </p>
         </div>
         
 
@@ -19,7 +19,7 @@
 
         <div class="w-[80%]">
             <h1 class="bg-transparent text-start text-[30px] font-poppins mt-3">Links</h1>
-            <p class="font-poppins mt-2 text-[15px]">Add an element input facilitated with the component <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">kkp_footer</span> </p>
+            <p class="font-poppins mt-2 text-[15px]">The footer component with links <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">kkp_footer</span> </p>
         </div>
 
         <!-- Default Input -->
@@ -31,9 +31,9 @@
         </div>
 
 
-        <div class="w-[80%]">
+        <div class="w-[90%]">
             <h1 class="bg-transparent text-start text-[30px] font-poppins mt-3">Socials </h1>
-            <p class="font-poppins mt-2 text-[15px]">Add an element input facilitated with the component <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">kkp_footer</span> </p>
+            <p class="font-poppins mt-2 text-[15px]">The footer component with socials.  Specify the social media platforms you want to include, such as GitHub  <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">git</span> Facebook  <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">fb</span> YouTube  <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">yt</span> Twitter  <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">x</span> and Instagram  <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">ig</span></p>
         </div>
 
         <!-- Default Input -->
@@ -46,9 +46,9 @@
             />
         </div>
 
-        <div class="w-[80%]">
+        <div class="w-[90%]">
             <h1 class="bg-transparent text-start text-[30px] font-poppins mt-3">Socials with description</h1>
-            <p class="font-poppins mt-2 text-[15px]">Add an element input facilitated with the component <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">kkp_footer</span> </p>
+            <p class="font-poppins mt-2 text-[15px]">The footer component with socials and description. The footer should have properties for <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">socials</span> and <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">content</span> and the <span class="text-pink-shade-four font-semibold border-pink-shade-two p-1 border-2 rounded-md">content</span> property should have a value. </p>
         </div>
 
         <!-- Default Input -->
