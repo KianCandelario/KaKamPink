@@ -1,45 +1,48 @@
 <template>
-    <div class="flex justify-center items-center h-screen">
-      <div class="relative inline-block text-left w-40">
-        <div>
-          <button @click="toggleDropdown" class="inline-flex justify-between w-full rounded-md shadow-sm px-4 py-2 bg-[#f1799f] text-md text-white focus:ring-none">
-            <span class="bg-transparent">{{ selectedGender }}</span>
-            <svg class="-mr-1 ml-2 h-6 w-5 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.72-3.72a.75.75 0 011.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-            </svg>
-          </button>
-        </div>
-        <div v-if="isOpen" class="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none border rounded-md">
-            <div>
-            <a v-for="item in items" :key="item" @click="selectGender(item)" class="flex flex-col items-center w-full block px-4 py-2 text-sm text-black hover:bg-gray-200 bg-white shadow-sm ">{{ item }}</a>
+    <div class="bg-pink-shade-two w-full p-3 overflow-scroll overflow-x-hidden h-[100%] ">
+      <div class="flex flex-col justify-center items-center rounded-xl">
+        <div class="w-[80%]">
+  
+          <!-- Dropdown -->
+          <h1 class="bg-transparent text-start text-[45px] font-poppins mt-5 text-[#f07aa2] font-bold tracking-wider">Dropdown</h1>
+          <p class="font-poppins mt-5 mb-5 text-[18px]">A dropdown component is a menu that appears when you click or hover over a button or icon. It collapses into a list of 
+            options that you can choose from.</p>
+  
+          <!-- Selection-->
+          <div>
+            <div class="w-[80%]">
+              <h1 class="bg-transparent text-start text-[30px] font-poppins mt-3"> Selection </h1>
+              <p class="font-poppins mt-2 text-[15px]">A selection dropdown component is a specific type of dropdown used in forms. It combines the functionality of a dropdown 
+                menu with the selection aspect of a typical form input field. To modify selection dropdown use the 
+                <span class="border p-1 rounded border-[#f07aa2] text-[#f07aa2] font-medium text-xs">kkp-SelectionDropdown</span></p>
+            </div>
+            <div class="w-[100%] h-[20vh] bg-white flex items-center justify-center rounded-2xl m-5">
+              <SelectionDropdown class="absolute bg-transparent"/>
+            </div>
           </div>
+
+          <!-- Search -->
+          <div>
+            <div class="w-[80%]">
+              <h1 class="bg-transparent text-start text-[30px] font-poppins mt-3"> Search </h1>
+              <p class="font-poppins mt-2 text-[15px]"> A search dropdown component combines the functionality of a search bar and a dropdown menu, offering a more efficient 
+                way for users to find specific options from a large list. To modify search dropdown use the 
+                <span class="border p-1 rounded border-[#f07aa2] text-[#f07aa2] font-medium text-xs">kkp-SearchDropdown</span></p>
+            </div>
+            <div class="w-[100%] h-[20vh] bg-white flex items-center justify-center rounded-2xl m-5">
+              <SearchDropdown class="absolute bg-transparent" />
+            </div>
+          </div>
+  
         </div>
       </div>
-    </div>
-  </template>
+    </div>    
 
-<script>
-export default {
-  props: {
-    items: {
-      type: Array,
-      required: true
-    }
-  },
-  data() {
-    return {
-      isOpen: false,
-      selectedGender: 'Gender'
-    };
-  },
-  methods: {
-    toggleDropdown() {
-      this.isOpen = !this.isOpen;
-    },
-    selectGender(gender) {
-      this.selectedGender = gender;
-      this.isOpen = false;
-    }
-  }
-};
+      
+  </template>
+  
+<script setup>
+  import SelectionDropdown from './kkp-SelectionDropdown.vue';
+  import SearchDropdown from './kkp-SearchDropdown.vue';
 </script>
+  
