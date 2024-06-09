@@ -1,7 +1,7 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Alert from './components/kkp-alert.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <Alert />
 </template>
