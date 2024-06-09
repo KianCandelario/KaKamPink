@@ -1,7 +1,7 @@
 <script setup>
-import Alert from './components/kkp-alert.vue';
+import LoaderView from './view/card-loaderView.vue';
 </script>
 
 <template>
-  <Alert />
+  <LoaderView />
 </template>

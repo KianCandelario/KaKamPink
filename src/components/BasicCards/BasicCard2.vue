@@ -7,14 +7,35 @@
       </p>
     </div>
     <div class="px-6 py-4">
-      <button class="bg-pink-shade-four text-white font-poppins py-2 px-4 rounded">Button</button>
+      <button class="bg-pink-shade-four text-white font-poppins py-2 px-4 rounded">{{ userData.Button }}</button>
     </div>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue'
+
+const loadUserData = async () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({
+                Title: 'Card Title',
+                Content: 'This is a basic card with a title and description.',
+                Button: 'Button',
+            })
+        }, 4000)
+    })
+}
+
 export default {
-  name: 'BasicCard1'
+  name: 'BasicCard2',
+    async setup() {
+        const userData = ref(await loadUserData())
+
+        return {
+            userData,
+        }
+    },
 }
 </script>
 
