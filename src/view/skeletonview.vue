@@ -14,8 +14,15 @@
                         <p class="font-poppins mt-2 text-[15px]"> Sub-Container Description </p>
                     </div>
             
-                    <div class="w-[100%] h-[20vh] bg-white flex items-center justify-center rounded-2xl m-5">
-                        Component area
+                    <div class="w-[100%] h-fit py-2 bg-white flex items-center justify-center rounded-2xl m-5">
+                        <Suspense>
+                            <template #default>
+                                <BasicCard />
+                            </template>
+                            <template #fallback>
+                                <LoaderBasicCard />
+                            </template>
+                        </Suspense>
                     </div>
                 </div>
             
@@ -26,4 +33,13 @@
 </template>
 
 <script>
+import BasicCard from '../components/BasicCards/BasicCard.vue';
+import LoaderBasicCard from '../components/BasicCards/Loader-BasicCard.vue';
+
+export default {
+    components: {
+      BasicCard,
+      LoaderBasicCard,
+    }
+};
 </script>
