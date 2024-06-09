@@ -9,7 +9,7 @@
         <p class=" bg-transparent mt-1"> <slot/> </p>
       </div>
     </div>
-    <div class=" bg-transparent grid grid-cols-3">
+    <div class=" bg-transparent grid grid-cols-3 pt-1">
       <button v-if="dismissable" :class="buttonBG + ' col-start-3 py-1 rounded-md text-white font-medium'" @click="dismissAlert">Close</button>
     </div>
   </div>
@@ -74,10 +74,10 @@ export default {
       return cva("", {
         variants: {
           intent: {
-            info: "bg-blue-700",
-            success: "bg-green-700",
+            info: "bg-blue-600",
+            success: "bg-green-600",
             warning: "bg-yellow-500",
-            danger: "bg-red-600",
+            danger: "bg-red-500",
             kkp: "bg-pink-shade-four",
           }
         }
