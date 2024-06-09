@@ -6,14 +6,14 @@
 </template>
 
 <script>
-/*import KKPCheckbox from './components/kkp_Checkbox.vue';*/
-import KKPAvatar from './components/kkp_Avatar.vue';
+import KKPCheckbox from './components/Kakp_checkbox.vue';
+/*import KKPAvatar from './components/Kakp_avatar.vue';*/
 
 export default {
   name: 'App',
   components: {
-    /*KKPCheckbox,*/
-    KKPAvatar,
+    KKPCheckbox,
+    /*KKPAvatar,*/
   },
   data() {
     return {
