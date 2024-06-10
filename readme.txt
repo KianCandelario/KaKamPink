@@ -23,4 +23,4 @@
     * 5. Start the Development Server *
         To start the development server, run:
 
-        - npm run serve
+        - npm run dev
