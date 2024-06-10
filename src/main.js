@@ -1,15 +1,8 @@
 // main.js
 import { createApp } from 'vue'
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router';
 import './styles/style.css'
 import './styles/index.css'
-
-import Homepage from './views/HomePage.vue'
-import Contributors from './views/Contributors.vue'
-import Documentation from './views/Documentation.vue'
-import Footer from './views/FooterView.vue'
-import Header from './components/Header.vue'
-import inputView from './views/InputView.vue'
 
 import App from './App.vue'
 
@@ -17,35 +10,117 @@ import App from './App.vue'
 const routes = [
     {
         path: '/',
-        component: Homepage
+        component: () => import('./views/HomePage.vue'),
+        meta: { transition: 'fade' }
     },
     {
         path: '/contributors',
-        component: Contributors
+        component: () => import('./views/Contributors.vue'),
+        meta: { transition: 'fade' }
     },
-    {   
+    {
         path: '/documentation',
-        component: Documentation,
+        component: () => import('./views/Documentation.vue'),
+        redirect: '/documentation/introduction',
+        meta:{transition: 'fade'},
         children: [
             {
+                path: 'introduction',
+                component: () => import('./views/Introduction.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
                 path: 'footer',
-                component: Footer
+                component: () => import('./views/FooterView.vue'),
+                meta: { transition: 'fade' },
             },
             {
                 path: 'header',
-                component: Header
+                component: () => import('./components/Header/Header.vue'),
+                meta: { transition: 'fade' },
             },
             {
                 path: 'inputs',
-                component: inputView
+                component: () => import('./views/InputView.vue'),
+                meta: { transition: 'fade' },
             },
+            {
+                path: 'button',
+                component: () => import('./views/ButtonView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'dialogs',
+                component: () => import('./views/DialogView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'sheet',
+                component: () => import('./views/SheetView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'bottomsheet',
+                component: () => import('./views/BottomSheetView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'dropdown',
+                component: () => import('./views/DropDown.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'popups',
+                component: () => import('./views/PopupView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'checkbox',
+                component: () => import('./views/CheckboxVue.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'avatar',
+                component: () => import('./views/AvatarView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'cards',
+                component: () => import ('./views/CardsView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'text-area',
+                component: () => import ('./views/TextareaView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'alert',
+                component: () => import ('./views/AlertView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'images',
+                component: () => import ('./views/ImageView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'card-loader',
+                component: () => import('./views/CardLoaderView.vue'),
+                meta: { transition: 'fade' },
+            },
+            {
+                path: 'hover',
+                component: () => import('./views/HoverView.vue'),
+                meta: { transition: 'fade' },
+            }
         ]
     }
 ]
 
 // Create router instance
 const router = createRouter({
-    history: createMemoryHistory(),
+    history: createWebHashHistory(),
     routes,
 })
 
