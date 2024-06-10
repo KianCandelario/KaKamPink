@@ -1,7 +1,8 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import CardsView from './components/CardsView.vue'
+import TextareaView from './components/TextareaView.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <TextareaView />
 </template>
