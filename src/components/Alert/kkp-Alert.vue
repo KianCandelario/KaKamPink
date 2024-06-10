@@ -25,7 +25,7 @@ export default {
     intent: {
       type: String,
       validator(value) {
-        return ['info', 'success', 'warning', 'danger', 'kkp'].includes(value);
+        return ['info', 'success', 'warning', 'danger'].includes(value);
       },
       default: 'kkp'
     },

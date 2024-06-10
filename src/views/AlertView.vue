@@ -144,7 +144,7 @@ export default {
           description: 'This prop allows the alert to be dismissed by the user.',
           alertTitle: 'Title',
           content: 'Click the close button to dismiss alert.',
-          intent: null,
+          intent: 'kkp',
           dismissable: true,
           autoDismiss: null,
           isContentVisible: false,
@@ -157,12 +157,12 @@ export default {
         },
         {
           title: 'Auto Dismiss',
-          description: 'This prop allows the alert to automatically disappear after a specific time.',
+          description: 'This prop allows the alert to automatically disappear after a specific time. *Reload the page to see the Alert*',
           alertTitle: 'Title',
-          content: 'This alert is set to dismiss in 3000 ms.',
+          content: 'This alert is set to dismiss in 5000 ms.',
           intent: null,
           dismissable: false,
-          autoDismiss: 3000,
+          autoDismiss: 5000,
           isContentVisible: false,
           code: `<template>
   <kkp-alert title="Title" :autoDismiss="3000">

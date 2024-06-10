@@ -13,7 +13,7 @@
                         <h1 class="bg-transparent text-start text-[30px] font-poppins mt-3"> Match your Card </h1>
                         <p class="font-poppins mt-2 text-[15px]"> KKP's <span class="text-pink-shade-four font-semibold">Card Loader</span> component offers different variants to match any <span class="text-pink-shade-four font-semibold">KKP Card component</span> 
                             KKP Card component that you want to use. <br>
-                        <br> *Reload to see Card Loaders*</p>
+                        <br> *Reload the page to see Card Loaders*</p>
                     </div>
 
                     <div class="w-[80%]">
