@@ -1,7 +1,26 @@
-# Vue 3 + Vite
+**Project Setup**
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+    Follow these steps to get your project up and running.
 
-## Recommended IDE Setup
+    * 1. Clone the Repository *
+        First, clone the repository to your local machine:
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+        - git clone https://github.com/KianCandelario/KaKamPink.git
+
+    * 2. Navigate to the Project Directory *
+
+        - cd KaKamPink
+
+    * 3. Install Dependencies *
+
+        - npm install
+
+    * 4. Install Additional Packages *
+        In this project, we will use cva (Class Variance Authority) and vue-router. Install these packages using npm:
+
+        - npm install cva vue-router
+    
+    * 5. Start the Development Server *
+        To start the development server, run:
+
+        - npm run dev
