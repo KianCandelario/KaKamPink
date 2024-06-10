@@ -1,4 +1,4 @@
-** Project Setup **
+**Project Setup**
 
     Follow these steps to get your project up and running.
 
