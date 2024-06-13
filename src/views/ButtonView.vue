@@ -234,6 +234,7 @@ export default{
                             <button 
                                 @click="toggleContent('text')" 
                                 class="bg-pink-shade-four hover:bg-pink-shade-one text-white font-bold py-2 px-4 rounded font-poppins text-[12px]">
+                                {{ buttonText('text') }}
                             </button>
                     </div>
                 </div>
