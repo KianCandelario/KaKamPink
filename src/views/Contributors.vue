@@ -87,7 +87,7 @@ export default {
         { user: './src/assets/contributors-page/profiles/kian.svg', link: 'https://github.com/KianCandelario', name: 'Kian Candelario' },
         { user: './src/assets/contributors-page/profiles/rus.svg', link: 'https://github.com/cusrussel', name: 'Russel Custodio' },
         { user: './src/assets/contributors-page/profiles/emman.svg', link: 'https://github.com/EmmanEjudo', name: 'Emmanuel Ejudo' },
-        { user: './src/assets/contributors-page/profiles/aye.svg', link: 'https://github.com/kiwirizz', name: 'Ayemarson Miguel Enriquez' },
+        { user: './src/assets/contributors-page/profiles/aye.svg', link: 'https://github.com/AyemarsonMiguel', name: 'Ayemarson Miguel Enriquez' },
         { user: './src/assets/contributors-page/profiles/mel.svg', link: 'https://github.com/MelZedricFaustino', name: 'Mel Zedric Faustino' },
         { user: './src/assets/contributors-page/profiles/vincent.svg', link: 'https://github.com/VincentMaiwat', name: 'Vincent Maiwat' },
         { user: './src/assets/contributors-page/profiles/panoy.svg', link: 'https://github.com/ajpanoy14', name: 'Angelo James Panoy' },
