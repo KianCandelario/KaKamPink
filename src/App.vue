@@ -1,7 +1,18 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
+import { RouterView } from 'vue-router'
+import Header from './components/Header/Header.vue'
 </script>
 
 <template>
-  <HelloWorld />
+    <div id="app">
+        <Header/>
+    <router-view v-slot="{ Component, route }">
+      <transition :name="route.meta.transition || 'fade'">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+  </div>
 </template>
+
+

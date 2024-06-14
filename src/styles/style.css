@@ -78,7 +78,7 @@ button:focus-visible {
   }
 } */
 
-body {
+*{
   background: transparent;
   background-color: #FEE3EC;
   box-sizing: border-box;
@@ -91,6 +91,46 @@ body {
   user-select: none;
 }
 
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-rotate {
+  animation: rotate 5s linear infinite;
+}
+
+.code-container {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  text-align: left;
+}
+.code-container pre {
+  margin: 0;
+}
+
+/* Default transition */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+/* Slide left transition */
+.slide-left-enter-active, .slide-left-leave-active {
+  transition: transform 0.3s;
+}
+.slide-left-enter, .slide-left-leave-to /* .slide-left-leave-active in <2.1.8 */ {
+  transform: translateX(100%);
+}
+.slide-left-leave-active {
+  transform: translateX(-100%);
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -101,11 +141,4 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
